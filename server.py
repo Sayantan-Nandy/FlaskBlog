@@ -186,7 +186,7 @@ def get_blog_numeric():
         q.enqueue(p)
 
     return_list = {}
-    for i in range(len(posts)):
+    for j in range(len(posts)):
         post = q.dequeue()
 
         p = {
@@ -196,7 +196,7 @@ def get_blog_numeric():
 
         }
 
-        return_list[i]=p
+        return_list[j]=p
 
     return return_list        
 
